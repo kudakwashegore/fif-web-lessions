@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Our Website</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <header>
+            <div class="centered">
+               <a href="index.html" class="logo"><span>Our Website</span></a>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="about_us.html">About Us</a>
+                    <a href="contact_us.html">Contact Us</a>
+                </nav>
+            </div>
+        </header>
+        
+        <section>
+            <div class="centered">
+                <article>
+                    <h1>Contact Us</h1>
+                    <p>Use this form to contact us</p>
+                    <form>
+                        <div class="form-wrapper">
+                            <div>
+                                <label>Full Name</label>
+                                <input type="text" name="full_name"/>
+                            </div>
+                            <div>
+                                <label>Email Address</label>
+                                <input type="text" name="full_name"/>
+                            </div>
+                            <div>
+                                <label>Telephone Number</label>
+                                <input type="text" name="full_name"/>
+                            </div>
+                            <div>
+                                <label>Message</label>
+                                <textarea></textarea>
+                            </div>
+                            <div>
+                                <button type="submit">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+                <aside>
+                    <h4>Where we are</h4>
+                    <div class="google_map" id="google_map"></div>
+                </aside>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="centered">
+                <p><small>&copy; Copyright 2020. Our Website</small></p>
+            </div>
+        </footer>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCyNfBeO1MZFsMsjgUwoM8xVu3f-mwwiZU&callback=initMap"
+  type="text/javascript"></script>
+   <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of my home
+          var home_location = {lat: -33.847788, lng: 18.524733};
+          // The map, centered at home
+          var map = new google.maps.Map(
+              document.getElementById('google_map'), {zoom: 15, center: home_location});
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: home_location, map: map});
+        }
+    </script>
+    </body>    
+</html>

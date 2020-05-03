@@ -1,0 +1,113 @@
+html, body{
+    font-size: 1em;
+    color: #666666;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background: #FF9999;
+    color: #fff;
+    padding: 15px 0;
+}
+div.centered{
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+a.logo{
+    text-decoration: none;
+    font-size: .6em;
+    float: left;
+}
+a.logo span {
+    width: 68px;
+    height: 15px;
+    background: red;
+    text-align: center;
+    display: block;
+    color: #fff;
+    border-radius: 50%;
+    padding: 25px 0;
+}
+nav{
+    display: inline-block;
+    float: right;
+}
+nav a{
+    line-height: 68px;
+    margin-left: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+footer{
+    width: 100%;
+    background: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+img.banner{
+    display: block;
+    width: 100%;
+}
+.touts{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 30px 0;
+}
+.touts > div{
+    width: 33.33%;
+    padding: 0 15px;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+}
+article{
+    width: 70%;
+    float: left;
+}
+aside{
+    width: 27%;
+    float: right;
+}
+form{
+    width: 100%;
+    position: relative;
+    padding-top: 30px;
+}
+form label{
+    margin-bottom: 15px;
+    display: inline-block;
+}
+form div.form-wrapper div{
+    margin-bottom: 20px;
+}
+form input, form textarea{
+    border: none;
+    background: #eee;
+    color: #000;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    width: 100%;
+}
+form textarea{
+    height: 100px;
+} 
+form button{
+    display: block;
+    width: 100%;
+    background: #000;
+    border: none;
+    border-radius: 3px;
+    color: #ffff;
+    height: 35px;
+}
+.google_map{
+    width: 100%;
+    height: 200px;
+}
